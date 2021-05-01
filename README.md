@@ -169,6 +169,9 @@ Play the timeline automatically with the `slideShow` mode. This prop enables the
 | theme                   | prop to customize the colors.                                                         |              |
 | onScrollEnd             | use the `onScrollEnd` to detect the end of the timeline.                              |              |
 | useReadMore             | enables or disables the read more button. when disabled the card will auto expand to fit the content|    true          |
+| cardStyle               | style overrides for item cards                                                        |               |
+| videoStyle              | style overrides for video media in items | |
+| imageStyle              | style overrides for video image in items | |
 
 ### Mode
 
