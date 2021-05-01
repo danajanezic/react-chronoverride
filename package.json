@@ -1,6 +1,6 @@
 {
-  "name": "react-chrono",
-  "version": "1.9.3",
+  "name": "react-chronoverride",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "A Modern Timeline component for React",
   "keywords": [
@@ -9,9 +9,9 @@
     "horizontal-timeline",
     "vertical-timeline"
   ],
-  "author": "Prabhu Murthy",
+  "author": "Dana Janezic - but really 99.99% Prabhu Murthy",
   "repository": {
-    "url": "https://github.com/prabhuignoto/react-chrono",
+    "url": "https://github.com/danajanezic/react-chronoverride",
     "type": "git"
   },
   "scripts": {
