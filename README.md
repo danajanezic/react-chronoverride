@@ -1,18 +1,11 @@
-<div align="center">
-  <img src="./readme-assets/social-logo-small.png" />
-  
-  <br/>
-  <br/>
-
-  [![Build Status](https://dev.azure.com/prabhummurthy/react-chrono/_apis/build/status/prabhuignoto.react-chrono?branchName=master)](https://dev.azure.com/prabhummurthy/react-chrono/_build/latest?definitionId=7&branchName=master)
-  [![DeepScan grade](https://deepscan.io/api/teams/10074/projects/13644/branches/234929/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10074&pid=13644&bid=234929)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f2e24a98defd4e4fa7f6f24d86b8dab5)](https://www.codacy.com/manual/prabhuignoto/react-chrono?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prabhuignoto/react-chrono&amp;utm_campaign=Badge_Grade)
-  [![react-chrono](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/8zb5a5&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/8zb5a5/runs)
-  ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/prabhuignoto/react-chrono?style=flat)
-  [![Depfu](https://badges.depfu.com/badges/48a23a6a830309649b7e516467cd9a48/overview.svg)](https://depfu.com/github/prabhuignoto/react-chrono?project_id=15325)
-  ![https://badgen.net/bundlephobia/min/react](https://badgen.net/bundlephobia/min/react)
-  <a href="https://5f985eb478dcb00022cfd60e-ywtootfinv.chromatic.com/?path=/story/example-vertical--vertical-basic" target="_blank"><img src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg"></a>
-
+<div align="center"> 
+  <h1>React ChronOverride</h1> 
+  <p>
+    This is merely a fork of the fantastic 
+      <a href='https://github.com/prabhuignoto/react-chrono'>React Chrono</a> Library with the ability
+      to override styles for cards and item media. Should anyone care to update the tests
+      for this to reflect my changes and submit it as a PR to them please go for it.
+  </p> 
   <div>
     <img src="./readme-assets/demo3.gif" />
   </div>
