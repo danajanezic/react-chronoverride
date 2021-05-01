@@ -61,6 +61,7 @@ const TimelineCardContent: React.FunctionComponent<TimelineContentModel> = React
       slideItemDuration = 2000,
       useReadMore,
       cardWidth,
+      cardStyle,
     } = useContext(GlobalContext);
 
     const canShowProgressBar = useMemo(() => {
@@ -227,6 +228,7 @@ const TimelineCardContent: React.FunctionComponent<TimelineContentModel> = React
         ref={containerRef}
         tabIndex={0}
         theme={theme}
+        style={cardStyle}
       >
         <TimelineCardHeader>
           {/* main title */}

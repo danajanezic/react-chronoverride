@@ -37,7 +37,7 @@ const CardMedia: React.FunctionComponent<CardMediaModel> = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [loadFailed, setLoadFailed] = useState(false);
 
-  const { mode } = useContext(GlobalContext);
+  const { mode, videoStyle, imageStyle } = useContext(GlobalContext);
 
   useEffect(() => {
     if (!videoRef) {
@@ -101,6 +101,7 @@ const CardMedia: React.FunctionComponent<CardMediaModel> = ({
         autoPlay={active}
         ref={videoRef}
         onLoadedData={handleMediaLoaded}
+        style={videoStyle}
         onPlay={() =>
           onMediaStateChange({
             id,
@@ -140,6 +141,7 @@ const CardMedia: React.FunctionComponent<CardMediaModel> = ({
         active={active}
         alt={media.name}
         loading={'lazy'}
+        style={imageStyle}
       />
     );
   }, [active, mediaLoaded]);

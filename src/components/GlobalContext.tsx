@@ -16,10 +16,11 @@ const GlobalContextProvider: React.FunctionComponent<Partial<PropsModel>> = (
     props,
   );
   const { children } = props;
+
   return (
-    <GlobalContext.Provider value={defaultProps}>
-      {children}
-    </GlobalContext.Provider>
+      <GlobalContext.Provider value={defaultProps}>
+        {children}
+      </GlobalContext.Provider>
   );
 };
 

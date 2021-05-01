@@ -1,5 +1,6 @@
 import { Theme } from './Theme';
 import { TimelineItemModel } from './TimelineItemModel';
+import { MediaType } from './TimelineMediaModel';
 
 /**
  * model internally used by the component
@@ -163,6 +164,11 @@ export interface TimelineProps {
 
   // this prop decides whether readmore is enabled or not
   useReadMore?: boolean;
+
+  // style overrides
+  cardStyle?: object;
+  videoStyle?: object;
+  imageStyle?: object;
 }
 
 export type TimelineMode = 'VERTICAL' | 'HORIZONTAL' | 'VERTICAL_ALTERNATING';

@@ -89,6 +89,7 @@ export const VerticalBasic: FunctionComponent<{
         scrollable={{scrollbar:   false}}
         theme={{cardBgColor:  "#fff",  cardForeColor:  "blue"}}
         useReadMore={false}
+        testString={"THIS IS A TEST"}
       />
     </ComponentContainerTree>
   </Vertical>
@@ -98,7 +99,7 @@ export const VerticalTree: FunctionComponent<{
   type: string;
   items: TimelineItemModel[];
 }> = ({ type, items }) => {
-  
+
   return <Vertical id="tree">
     <Description>
       <span>
@@ -264,7 +265,7 @@ export const VerticalCustomContent: FunctionComponent<{
     </Description>
     <ComponentContainerTree type={type}>
       <Chrono
-        mode="VERTICAL" 
+        mode="VERTICAL"
         cardHeight={200}
         scrollable
       >
@@ -339,7 +340,7 @@ export const VerticalCustomContent2: FunctionComponent<{
     </Description>
     <ComponentContainerTree type={type}>
       <Chrono
-        mode="VERTICAL" 
+        mode="VERTICAL"
         cardHeight={200}
         scrollable
         flipLayout
@@ -403,6 +404,44 @@ export const VerticalCustomContent2: FunctionComponent<{
           <img src="rss.svg" alt="github" />
         </div>
       </Chrono>
+    </ComponentContainerTree>
+  </Vertical>
+);
+export const VerticalCustomStyles: FunctionComponent<{
+  type: string;
+  cardHeight?: number;
+}> = ({ type, items, cardHeight }) => (
+  <Vertical>
+    <Description>
+      <span>
+        <DescriptionHeader>Vertical with Customized Wrapper Styles</DescriptionHeader>
+      </span>
+      <DescriptionContent>
+        Customized Styles with data api
+      </DescriptionContent>
+    </Description>
+    <ComponentContainerTree type={type}>
+      <Chrono
+        mode="VERTICAL_ALTERNATING"
+        cardHeight={200}
+        scrollable
+        flipLayout
+        items={dataMixed}
+        imageStyle={{
+          minWidth: 200,
+          border: '3px solid white'
+        }}
+        videoStyle={{
+          minWidth: 200,
+          border: '3px solid white'
+        }}
+        cardStyle={{
+          backgroundColor: '#808080',
+          color: 'white',
+          width: 200,
+          padding: '25px',
+        }}
+      />
     </ComponentContainerTree>
   </Vertical>
 );

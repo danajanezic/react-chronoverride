@@ -6,7 +6,8 @@ import {
   VerticalBasic,
   VerticalCustomContent,
   VerticalCustomContent2, VerticalTree,
-  VerticalTreeMixed
+  VerticalTreeMixed,
+  VerticalCustomStyles
 } from './app-samples';
 import './App.css';
 import {
@@ -62,6 +63,9 @@ const NewDemo: React.FunctionComponent = () => {
           <li>
             <Link to="/dynamic-load">Dynamic data load</Link>
           </li>
+          <li>
+            <Link to="/wrapper-custom-styles">Custom Wrapper Styles</Link>
+          </li>
         </ComponentLinks>
       </header>
       <section>
@@ -73,7 +77,7 @@ const NewDemo: React.FunctionComponent = () => {
             )}
           </Route>
           <Route path="/vertical-alternating-mixed">
-            {items.length > 0 && <VerticalTreeMixed type={"big-screen"} />} 
+            {items.length > 0 && <VerticalTreeMixed type={"big-screen"} />}
           </Route>
           <Route path="/vertical-alternating">
             <button onClick={() => {
@@ -94,6 +98,9 @@ const NewDemo: React.FunctionComponent = () => {
           </Route>
           <Route path="/dynamic-load">
               {items.length  > 0 && <DynamicLoad />}
+          </Route>
+          <Route path="/wrapper-custom-styles">
+            {items.length > 0 && <VerticalCustomStyles type="big-screen" />}
           </Route>
           <Route path="/">
             {items.length > 0 && (
