@@ -9,9 +9,9 @@
     "horizontal-timeline",
     "vertical-timeline"
   ],
-  "author": "Dana Janezic - but really 99.99% Prabhu Murthy",
+  "author": "Prabhu Murthy",
   "repository": {
-    "url": "https://github.com/danajanezic/react-chronoverride",
+    "url": "https://github.com/prabhuignoto/react-chrono",
     "type": "git"
   },
   "scripts": {
@@ -35,6 +35,10 @@
     "@emotion/styled": "^11.3.0",
     "classnames": "^2.3.1",
     "focus-visible": "^5.2.0"
+  },
+  "publishConfig": {
+    "cache": "cache/.npm",
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
@@ -124,5 +128,7 @@
     "not dead",
     "> 5%"
   ],
-  "main": "react-chrono.ts"
+  "main": "dist/react-chrono.js",
+  "module": "dist/react-chrono.esm.js",
+  "umd": "dist/react-chrono.umd.js"
 }
