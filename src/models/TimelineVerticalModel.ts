@@ -1,6 +1,7 @@
+import React from 'react';
 import { Theme } from './Theme';
 import { Scroll } from './TimelineHorizontalModel';
-import { TimelineCardModel } from './TimelineItemModel';
+import { title, detailedText, TimelineCardModel } from './TimelineItemModel';
 import { Media } from './TimelineMediaModel';
 import { TimelineMode } from './TimelineModel';
 
@@ -84,13 +85,13 @@ export interface VerticalCircleModel extends CommonVerticalModel {
 }
 
 export interface VerticalItemModel extends CommonVerticalModel {
-  cardDetailedText?: string | string[];
-  cardSubtitle?: string;
-  cardTitle?: string;
+  cardDetailedText?: detailedText;
+  cardSubtitle?: title;
+  cardTitle?: title;
   index: number;
   media?: Media;
   onShowMore?: () => void;
-  title?: string;
+  title?: title;
   visible?: boolean;
   contentDetailsChildren?: React.ReactNode;
   iconChild?: React.ReactNode;

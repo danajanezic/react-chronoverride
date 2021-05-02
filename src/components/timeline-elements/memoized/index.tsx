@@ -6,7 +6,7 @@ import {
 } from '../timeline-card-content/timeline-card-content.styles';
 
 interface Title {
-  title?: string;
+  title?: string | React.ReactElement | React.ReactElement[];
   theme?: Theme;
   color?: string;
   dir?: string;
@@ -14,7 +14,7 @@ interface Title {
 }
 
 interface Content {
-  content?: string;
+  content?: string | React.ReactElement | React.ReactElement[];
   color?: string;
   dir?: string;
   theme?: Theme;

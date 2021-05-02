@@ -1,8 +1,10 @@
-/// <reference types="react" />
+import React from 'react';
 import { Theme } from './Theme';
 import { Scroll } from './TimelineHorizontalModel';
 import { Media } from './TimelineMediaModel';
 import { TimelineMode } from './TimelineModel';
+export declare type title = string | React.ReactElement | React.ReactElement[];
+export declare type detailedText = string | string[] | React.ReactElement | React.ReactElement[];
 /**
  *
  *
@@ -11,13 +13,13 @@ import { TimelineMode } from './TimelineModel';
  */
 export interface TimelineItemModel {
     active?: boolean;
-    cardDetailedText?: string | string[];
-    cardSubtitle?: string;
-    cardTitle?: string;
+    cardDetailedText?: detailedText;
+    cardSubtitle?: title;
+    cardTitle?: title;
     id?: string;
     media?: Media;
     position?: string;
-    title?: string;
+    title?: title;
     visible?: boolean;
 }
 export interface TimelineCardModel extends TimelineItemModel {

@@ -1,10 +1,12 @@
 import { Theme } from './Theme';
 import { Media } from './TimelineMediaModel';
+import {title, detailedText} from './TimelineItemModel';
+import React from 'react';
 
 export interface TimelineContentModel {
   active?: boolean;
-  content?: string;
-  detailedText?: string | string[];
+  content?: title;
+  detailedText?: detailedText;
   id?: string;
   media?: Media;
   onClick?: (id: string) => void;
@@ -12,8 +14,9 @@ export interface TimelineContentModel {
   onElapsed?: (id?: string) => void;
   slideShowActive?: boolean;
   theme?: Theme;
-  title?: string;
+  title?: title;
   branchDir?: string;
   customContent?: React.ReactNode;
   hasFocus?: boolean;
 }
+

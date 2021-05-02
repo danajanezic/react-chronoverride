@@ -125,7 +125,7 @@ const CardMedia: React.FunctionComponent<CardMediaModel> = ({
         }
         onError={handleError}
       >
-        <source src={media.source.url}></source>
+        <source src={media.source.url}/>
       </CardVideo>
     );
   }, [active]);

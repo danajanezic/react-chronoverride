@@ -1,7 +1,7 @@
 import React from 'react';
 import { Theme } from '../../../models/Theme';
 interface TitleModel {
-    title?: string;
+    title?: string | React.ReactElement | React.ReactElement[];
     active?: boolean;
     theme?: Theme;
     align?: 'left' | 'right';

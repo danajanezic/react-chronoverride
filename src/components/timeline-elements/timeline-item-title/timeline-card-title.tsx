@@ -4,7 +4,7 @@ import { Theme } from '../../../models/Theme';
 import { TitleWrapper } from './timeline-card-title.styles';
 
 interface TitleModel {
-  title?: string;
+  title?: string | React.ReactElement | React.ReactElement[];
   active?: boolean;
   theme?: Theme;
   align?: 'left' | 'right';

@@ -133,7 +133,7 @@ const TimelineCard: React.FunctionComponent<TimelineCardModel> = ({
           ref={circleRef}
           data-testid="timeline-circle"
           theme={theme}
-          aria-label={title}
+          aria-label={typeof title === 'string' ? title : 'title'}
         >
           {iconChild ? iconChild : null}
         </Circle>

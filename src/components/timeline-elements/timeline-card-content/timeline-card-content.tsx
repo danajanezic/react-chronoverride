@@ -13,6 +13,7 @@ import { GlobalContext } from '../../GlobalContext';
 import ChevronIcon from '../../icons/chev-right';
 import { MemoSubTitle, MemoTitle } from '../memoized';
 import CardMedia from '../timeline-card-media/timeline-card-media';
+import { title } from '../../../models/TimelineItemModel';
 import {
   ChevronIconWrapper,
   ShowMore,
@@ -271,12 +272,13 @@ const TimelineCardContent: React.FunctionComponent<TimelineContentModel> = React
               theme={theme}
             >
               {Array.isArray(detailedText)
-                ? detailedText.map((text, index) => (
-                    <TimelineSubContent key={index}>{text}</TimelineSubContent>
-                  ))
+                ? detailedText.map((text: {} | null | undefined, index: React.Key | null | undefined) => (
+                      <TimelineSubContent key={index}>{text}</TimelineSubContent>
+                ))
                 : detailedText}
             </TimelineContentDetails>
           )}
+
         </TimelineContentDetailsWrapper>
 
         {/* display the show more button for textual content */}
@@ -311,7 +313,7 @@ const TimelineCardContent: React.FunctionComponent<TimelineContentModel> = React
             paused={paused}
             ref={progressRef}
             startWidth={startWidth}
-          ></SlideShowProgressBar>
+          />
         )}
       </TimelineItemContentWrapper>
     );

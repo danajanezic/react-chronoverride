@@ -1,4 +1,5 @@
 import { Theme } from './Theme';
+import React from 'react';
 
 export type MediaType = 'VIDEO' | 'IMAGE';
 export interface MediaSource {
@@ -21,12 +22,12 @@ export interface MediaState {
 export interface CardMediaModel {
   active?: boolean;
   cardHeight?: number;
-  content?: string;
+  content?: string | React.ReactElement | React.ReactElement[];
   hideMedia: boolean;
   id?: string;
   media: Media;
   onMediaStateChange: (state: MediaState) => void;
   slideshowActive?: boolean;
   theme?: Theme;
-  title?: string;
+  title?: string | React.ReactElement | React.ReactElement[];
 }
