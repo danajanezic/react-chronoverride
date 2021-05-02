@@ -36,10 +36,6 @@
     "classnames": "^2.3.1",
     "focus-visible": "^5.2.0"
   },
-  "publishConfig": {
-    "cache": "cache/.npm",
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/plugin-proposal-optional-chaining": "^7.13.12",
@@ -128,7 +124,5 @@
     "not dead",
     "> 5%"
   ],
-  "main": "dist/react-chrono.js",
-  "module": "dist/react-chrono.esm.js",
-  "umd": "dist/react-chrono.umd.js"
+  "main": "react-chrono.ts"
 }
